@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  height: 480px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hide;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.slide {
+  border: 1px solid blue;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hide;
+}
+.slide img {
+  object-fit: cover;
+}
+
+#goLeft {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 80%;
+  background: none;
+  border: none;
+  transition: 0.5s;
+  outline: none;
+}
+#goLeft:hover {
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+#goRigh:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.35);
+}
+#goRigh {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+#goRigh i {
+  font-size: 3vh;
+}
+#goLeft i {
+  font-size: 3vh;
+}
